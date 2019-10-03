@@ -79,11 +79,14 @@ WSGI_APPLICATION = 'election.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'vaalikoppi',                      # Or path to database file if using sqlite3.
+        # Or path to database file if using sqlite3.
+        'NAME': 'vaalikoppi',
         'USER': 'vaalikoppi',                      # Not used with sqlite3.
         'PASSWORD': 'vaalikoppi',                  # Not used with sqlite3.
-        'HOST': '',                                # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                                # Set to empty string for default. Not used with sqlite3.
+        # Set to empty string for localhost. Not used with sqlite3.
+        'HOST': "mysql://b45fc17ec13649:25f271c5@eu-cdbr-west-02.cleardb.net/heroku_9ece5d4fa819bdc?reconnect=true",
+        # Set to empty string for default. Not used with sqlite3.
+        'PORT': '',
         'ATOMIC_REQUESTS': True,
     }
 }
