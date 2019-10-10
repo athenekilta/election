@@ -84,7 +84,7 @@ DATABASES = {
         'USER': 'vaalikoppi',                      # Not used with sqlite3.
         'PASSWORD': 'vaalikoppi',                  # Not used with sqlite3.
         # Set to empty string for localhost. Not used with sqlite3.
-        'HOST': "mysql://b45fc17ec13649:25f271c5@eu-cdbr-west-02.cleardb.net/heroku_9ece5d4fa819bdc?reconnect=true",
+        'HOST': '',
         # Set to empty string for default. Not used with sqlite3.
         'PORT': '',
         'ATOMIC_REQUESTS': True,
